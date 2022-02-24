@@ -10,7 +10,7 @@ public class Main {
             System.out.println(exception.getMessage());
         }
 
-        String[][] arr2= {{"0","10", "15", "0"}, {"5","0","2","6"}, {"2","0","8","3"}, {"5","4","6","9"}};
+        String[][] arr2= {{"10","10", "15", "0"}, {"5","0","2","6"}, {"2","0","8","3"}, {"5","4","6","9"}};
         try{
             elementConversionAndSum(arr2);
         }
