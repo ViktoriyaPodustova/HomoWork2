@@ -14,25 +14,25 @@ public class Main {
         try{
             elementConversionAndSum(arr2);
         }
-            catch (MyArraySizeException | MyArrayDataException ex){
-                System.out.println(ex.getMessage());
-            }
+        catch (MyArraySizeException | MyArrayDataException ex){
+            System.out.println(ex.getMessage());
+        }
     }
     public static void elementConversionAndSum(String[][] arr) throws MyArraySizeException, MyArrayDataException {
-         if (arr.length != 4) {
+        if (arr.length != 4) {
             throw new MyArraySizeException();
         }
-         int sum=0;
+        int sum=0;
         for (int i=0; i< arr.length; i++){
             if (arr[i].length != 4){
                 throw new MyArraySizeException();
             }
             for (int j=0; j< arr.length; j++){
-        try{
-            int element = Integer.parseInt(arr[i][j]);
-            sum+=element;
-        }catch (NumberFormatException e){
-            throw new MyArrayDataException(i, j);
+                try{
+                    int element = Integer.parseInt(arr[i][j]);
+                    sum+=element;
+                }catch (NumberFormatException e){
+                    throw new MyArrayDataException(i, j);
                 }
             }
         }
