@@ -14,3 +14,5 @@ public class MyArrayDataException extends Exception{
         return "Некорректный формат данных в массиве: x="+ x + " y="+ y ;
     }
 }
+
+
